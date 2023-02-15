@@ -17,7 +17,7 @@
             }
         </style>
     </head>
-    <body class="antialiased bg-gray-900">
+    <body class="antialiased bg-white">
         <nav class="p-4 bg-purple-600">
             <div class="container">
                 <h1 class="font-bold text-white text-2xl">Alecrim Dourado</h1>
