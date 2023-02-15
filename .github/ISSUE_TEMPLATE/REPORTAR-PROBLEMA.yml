@@ -1,0 +1,18 @@
+name: Reportar um Problema
+description: Descreva um problema ou bug atual no sistema
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descreva o problema, se houver prints ou vídeos por favor anexe aqui
+      placeholder: Ex. Houve um problema no cadastro de clientes onde os usuários não conseguem alterar a paginação
+  - type: textarea
+    id: como-simular
+    attributes:
+      label: Quais os passos para simular o problema
+      placeholder: Ex. Clique em Clientes, depois role a tela até o final e clique nas opções da paginação
+    validations:
+      required: true
+
