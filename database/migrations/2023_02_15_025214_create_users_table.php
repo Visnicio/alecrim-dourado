@@ -29,7 +29,7 @@ return new class extends Migration
             'name' => 'Usuário de Teste',
             'email' => 'admin@admin.com',
             'company_id' => 1,
-            'password' => 'admin', // password
+            'password' => bcrypt('123'), // password
        ]);
     }
 
