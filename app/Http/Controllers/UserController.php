@@ -21,6 +21,9 @@ class UserController extends Controller
 
 
         if ( Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            // $company = DB::table('companies')->where('id', Auth::user()->company_id)->first();
+            // return dd($company->id);
+            $_SESSION['company_id'] = Auth::user()->company_id;
             return redirect('/dashboard');
         }else{
             return back()->withErrors(['error' => 'Usuário ou senha inválidos']);

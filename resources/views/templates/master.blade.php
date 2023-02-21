@@ -15,10 +15,12 @@
 <body>
     <div class="grid grid-cols-12 min-h-screen">
         <aside class='bg-orange-900 px-5 py-20 col-span-1 text-white'>
-            <h1 class="text-2xl font-bold mb-10">Alecrim dourado</h1>
+            <h1 class="text-2xl font-bold mb-10">
+                <a href="/">Alecrim dourado</a>
+            </h1>
             <ul class="text-xl">
-                <li>
-                    <a href="">Alunos</a>
+                <li class="mb-5">
+                    <a href="/students" class="">Alunos</a>
                 </li>
                 <li>
                     <a href="">Chamada</a>

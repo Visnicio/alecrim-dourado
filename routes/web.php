@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudentController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +18,16 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
+    if(Auth::check()){
+        return redirect('/dashboard');
+    }
     return view('welcome');
+
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $username = Auth::user()->name;
+    return view('dashboard', ['username' => $username]);
 });
 
 Route::get('/login', function() {
@@ -28,3 +35,7 @@ Route::get('/login', function() {
 });
 
 Route::post('/login', [UserController::class, 'login']);
+
+Route::get('/students', [StudentController::class, 'index']);
+
+Route::post('/students', [StudentController::class, 'create']);
