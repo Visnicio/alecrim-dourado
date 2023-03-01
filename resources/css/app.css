@@ -22,3 +22,7 @@ th, td{
 .table-body tr{
     @apply hover:bg-gray-50
 }
+
+.form-input{
+    @apply px-5 py-2 border-2 border-orange-900 rounded-xl w-full;
+}

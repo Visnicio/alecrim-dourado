@@ -24,11 +24,11 @@
                 @csrf
                 <div class="flex flex-col mb-5">
                     <label for="email">Informe seu email</label>
-                    <input type="text" id='email' name='email' class="px-5 py-2 border-2 border-blue-200 rounded-xl">
+                    <input type="text" id='email' name='email' class="px-5 py-2 border-2 border-black rounded-xl">
                 </div>
                 <div class="flex flex-col">
                     <label for="password">Informe sua senha</label>
-                    <input type="password" id='password' name='password' class="px-5 py-2 border-2 border-blue-200 rounded-xl">
+                    <input type="password" id='password' name='password' class="px-5 py-2 border-2 border-black rounded-xl">
                 </div>
 
                 @if ($errors->any())

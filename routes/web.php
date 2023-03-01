@@ -38,4 +38,12 @@ Route::post('/login', [UserController::class, 'login']);
 
 Route::get('/students', [StudentController::class, 'index']);
 
+Route::get('/students/new', function(){
+    return view('student');
+});
+
+Route::get('/students/{id}', [StudentController::class, 'show']);
+
 Route::post('/students', [StudentController::class, 'create']);
+
+Route::put('/students/{id}', [StudentController::class, 'update']);
