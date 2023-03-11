@@ -5,7 +5,7 @@
     <div class="container mx-auto py-20">
         <div class="text-xl mb-10">Cadastro de Alunos</div>
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-4">
+            <div class="col-span-12 sm:col-span-4">
                 <a class="btn mb-5" href="students/new">Cadastrar novo aluno</a>
             </div>
             <div class="col-span-12">

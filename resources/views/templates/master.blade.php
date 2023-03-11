@@ -13,8 +13,8 @@
     {{-- @vite('resources/js/app.js') --}}
 </head>
 <body>
-    <div class="grid grid-cols-12 min-h-screen">
-        <aside class='bg-orange-900 px-5 py-20 col-span-1 text-white'>
+    <div class="sm:grid sm:grid-cols-12 min-h-screen flex flex-col">
+        <aside class='bg-orange-900 px-5 py-20 sm:col-span-1 text-white'>
             <h1 class="text-2xl font-bold mb-10">
                 <a href="/">Alecrim dourado</a>
             </h1>
@@ -22,8 +22,11 @@
                 <li class="mb-5">
                     <a href="/students" class="">Alunos</a>
                 </li>
+                <li class="mb-5">
+                    <a href="/classrooms">Salas</a>
+                </li>
                 <li>
-                    <a href="">Chamada</a>
+                    <a href="/attendances">Chamada</a>
                 </li>
             </ul>
         </aside>

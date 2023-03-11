@@ -14,23 +14,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('classrooms', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('company_id')->constrained('companies');
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->foreignId('company_id')->constrained('companies');
             $table->timestamps();
         });
 
-       DB::table('users')->insert([
-            'name' => 'Usuário de Teste',
-            'email' => 'admin@admin.com',
+        DB::table('classrooms')->insert([
+            'name' => 'Sala 1',
             'company_id' => 1,
-            'password' => bcrypt('123'), // password
-       ]);
+        ]);
     }
 
     /**
@@ -40,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('classrooms');
     }
 };

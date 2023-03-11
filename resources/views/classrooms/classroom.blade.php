@@ -3,12 +3,12 @@
 @section('content')
 <div class="min-h-full" style="background-color: #f3f6f9">
     <div class="container mx-auto py-20">
-        <div class="text-xl mb-10">Cadastro de Aluno</div>
+        <div class="text-xl mb-10">Cadastro de Sala</div>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12">
-                <form action="{{ isset($student) ? '/students/'.$student->id : '/students' }}" method="POST">
+                <form action="{{ isset($classroom) ? '/classrooms/'.$classroom->id : '/classrooms' }}" method="POST">
                     @csrf
-                    @if (isset($student))
+                    @if (isset($classroom))
                         @method('PUT')
                     @endif
 
@@ -32,24 +32,14 @@
                     <div class="card">
                         <div class="grid grid-cols-12 gap-5">
                             <div class="col-span-12">
-                                <div class="text-2xl">Dados Cadastrais</div>
+                                <div class="text-2xl">Dados da Sala</div>
                             </div>
                             <div class="col-span-4">
                                 <div class="flex flex-col">
-                                    <label for="name" class="mb-3">Nome do Aluno</label>
-                                    <input type="text" name="name" id="name" class="form-input" value="{{isset($student) ? $student->name : ''}}">
+                                    <label for="name" class="mb-3">Nome da Sala/Turma</label>
+                                    <input type="text" name="name" id="name" class="form-input" value="{{isset($classroom) ? $classroom->name : ''}}">
                                 </div>
                             </div>
-                            <div class="col-span-2">
-                                <div class="flex flex-col">
-                                    <label for="age" class="mb-3">Idade</label>
-                                    <input type="number" name="age" id="age" class="form-input" value="{{isset($student) ? $student->age : ''}}">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-12-gap-5 mt-5">
-                            <div class="text-2xl">Cadastro Parental</div>
-
                         </div>
                         <div class="grid grid-cols-12 mt-10">
                             <button type="submit" class="btn">Salvar</button>

@@ -16,7 +16,8 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('company_id')->constrained();
+            $table->foreignId('company_id')->constrained("companies");
+            $table->foreignId('classroom_id')->constrained("classrooms");
             $table->string('name');
             $table->integer('age');
             $table->timestamps();
@@ -26,11 +27,13 @@ return new class extends Migration
             'name' => 'Fulano de Tal',
             'age' => 4,
             'company_id' => 1,
+            'classroom_id' => 1,
         ]);
         DB::table('students')->insert([
             'name' => 'Ciclano de',
             'age' => 6,
             'company_id' => 1,
+            'classroom_id' => 1,
         ]);
     }
 
