@@ -8,14 +8,14 @@
 
 ## Sobre o Projeto
 
-Este respositório contem o código fonte do Alecrim Dourado, projeto de ERP para creches FOSS (free and open source). Este projeto esta sendo desenvolvido e mantido com carinho pelo autor [Vinicius Antonio](https://github.com/Visnicio).
+Este repositório contem o código fonte do Alecrim Dourado, projeto de ERP para creches utilizando FOSS (free and open source). Este projeto está sendo desenvolvido e mantido com carinho pelo autor [Vinicius Antonio](https://github.com/Visnicio).
 
-## Identificou algum Bug/Problema?
+## Identificou algum bug ou problema?
 
-Por favor, sinta-se a vontade para nos contar sobre o problema através de nossas [issues](https://github.com/Visnicio/alecrim-dourado/issues).
+Por favor, sinta-se à vontade para nos contar sobre o problema através de nossas [issues](https://github.com/Visnicio/alecrim-dourado/issues).
 
 ## Gostaria de colaborar?
 
-Atualmente o projeto esta em fase Alpha, estamos lidando com estrutura, planejamento e colocando a mão na massa, em breve disponibilizaremos nossa Roadmap para que você possa acompanhar todo o progresso que nossa equipe tem realizado. No entanto, sinta-se a vontade para realizar um Fork do projeto e sugerir mudanças.
+Atualmente o projeto está em fase Alpha, estamos lidando com estrutura, planejamento e colocando a mão na massa, em breve disponibilizaremos nosso Roadmap para que você possa acompanhar todo o progresso que nossa equipe tem realizado. No entanto, sinta-se a vontade para realizar um Fork do projeto e sugerir mudanças.
 
-O Alecrim Dourado é desenvolvido com Laravel, framework licensiado através da [MIT license](https://opensource.org/licenses/MIT).
+O Alecrim Dourado é licenciado através da [licença MIT](https://opensource.org/licenses/MIT) e desenvolvido utilizando o framework PHP (Laravel) (https://laravel.com/)
