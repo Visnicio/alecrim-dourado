@@ -16,6 +16,6 @@ Por favor, sinta-se à vontade para nos contar sobre o problema através de noss
 
 ## Gostaria de colaborar?
 
-Atualmente o projeto está em fase Alpha, estamos lidando com estrutura, planejamento e colocando a mão na massa, em breve disponibilizaremos nossa Roadmap para que você possa acompanhar todo o progresso que nossa equipe tem realizado. No entanto, sinta-se a vontade para realizar um Fork do projeto e sugerir mudanças.
+Atualmente o projeto está em fase Alpha, estamos lidando com estrutura, planejamento e colocando a mão na massa, em breve disponibilizaremos nosso Roadmap para que você possa acompanhar todo o progresso que nossa equipe tem realizado. No entanto, sinta-se a vontade para realizar um Fork do projeto e sugerir mudanças.
 
-O Alecrim Dourado é desenvolvido utilizando Laravel, framework licenciado através da [licença MIT](https://opensource.org/licenses/MIT).
+O Alecrim Dourado é licenciado através da [licença MIT](https://opensource.org/licenses/MIT) e desenvolvido utilizando o framework PHP (Laravel) (https://laravel.com/)
