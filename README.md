@@ -1,21 +1,35 @@
-# Alecrim Dourado
-<!-- <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p> -->
+<p align="center"><img src="Logo.png" width="800" alt="Laravel Logo"></p>
 
-## Sobre o Projeto
+## About the Project
 
-Este repositório contem o código fonte do Alecrim Dourado, projeto de ERP para creches utilizando FOSS (free and open source). Este projeto está sendo desenvolvido e mantido com carinho pelo autor [Vinicius Antonio](https://github.com/Visnicio).
+This project is a starter-kit-ish for projects that intend to use Laravel + Svelte + TailwindCSS + InertiaJS, thus, creating a unified workflow for Javascript and PHP.
 
-## Identificou algum bug ou problema?
+## Installing the project
 
-Por favor, sinta-se à vontade para nos contar sobre o problema através de nossas [issues](https://github.com/Visnicio/alecrim-dourado/issues).
+- First, clone the repository using this command
+```bash
+git clone https://github.com/Visnicio/laravel-svelte-tailwind.git
+```
+- Next, install the dependencies using this command
+```bash
+cd laravel-svelte-tailwind
+composer install
+npm install
+```
+- Start the servers and you are ready to go!
+```bash
+php artisan serve
+npm run dev
+```
 
-## Gostaria de colaborar?
+## New to Inertia + Laravel?
+No need to worry, the projects's main route ('/') is already configured with inertia and getting data from a endpoint, so you can follow the same logic for your own routes.
 
-Atualmente o projeto está em fase Alpha, estamos lidando com estrutura, planejamento e colocando a mão na massa, em breve disponibilizaremos nosso Roadmap para que você possa acompanhar todo o progresso que nossa equipe tem realizado. No entanto, sinta-se a vontade para realizar um Fork do projeto e sugerir mudanças.
+### File Structure
+If you have questions about the file structure and how it works, its almost indentical to Laravel with you already worked with it in the MVC pattern.
+- `resources/js/app.js` - Lays the configuration for Inertia on the ClientSide.
+- `resources/js/Pages/*` - Here it will contain all the pages for your project.
 
-O Alecrim Dourado é licenciado através da [licença MIT](https://opensource.org/licenses/MIT) e desenvolvido utilizando o framework PHP (Laravel) (https://laravel.com/)
+## Learning Laravel
+
+If your completely new to Laravel, you can learn more on the [documentation](https://laravel.com/docs).
